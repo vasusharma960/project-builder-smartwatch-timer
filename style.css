@@ -1,119 +1,93 @@
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-  }
-
-  #parent-div {
-    margin-top: 10%;
-    margin-left: 40%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #3b3b3b;
-    border-radius: 2.5em;
-    width: 18vw;
-    height: 40vh;
-  }
-
-  #inner-div {
-    background-color: black;
-    color: white;
+}
+html,body{
     height: 100%;
-    border-radius: 2.5em;
-    display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
-    justify-content: stretch;
-    align-items: center;
-  }
+    width: 100%;
 
-  #main,
-  #headTime {
+    background:black;
+}
+.container{
+    display: flex;
+    height: 100%;
+}
+.left{
+    width: 50%;
+    background-color:rgb(43, 46, 56);
+}
+.right{
+    width: 50%;
+    background-color: white;
+}
+.text{
+    position: relative;
+    top: 285px;
     text-align: center;
-  }
-
-  #icons {
-    display: flex;
-    justify-content: space-around !important;
-    align-self: stretch !important;
-    font-size: 1.1em;
-    cursor: pointer;
-  }
-
-  a {
-    color: gray;
-  }
-
-  a:hover {
+    font-size: 4rem;
+    font-weight: 800;
     color: white;
-  }
-  #msg-cont {
-      width: 150px;
-      text-align: start;
-      margin-left: 45px;
-      overflow: auto;
-      border-radius: 15px;
-      margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
 
-    }
-
-    #msg-cont div {
-      background-color: white;
-      color: black;
-      font-size: 15px;
-      cursor: pointer;
-      padding: 10px;
-
-    }
-
-    #text {
-      font-size: 12px;
-      padding: 10px;
-      background-color: white;
-      color: black;
-    }
-
-
-    .t2{
-      font-weight: bold;
-      font-size: 35px;
-    }
-
-    .day{
-      font-family: monospace;
-      font-size: 18px;
-      font-family: sans-serif;
-    }
-    .date{
-    font-family: monospace;
-    font-size:15px;
-    }
-
-  .timer {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 25px;
-    padding-bottom: 10px;
-  }
-
-  #clock-icons {
+.clock{
+    text-align: center;
+    height: 340px;
+    width: 270px;
+    top: 25%;
+    left: 35%;
+    background: black;
+    border-radius: 15%;
+    border-top: 25px solid grey;
+    border-bottom: 25px solid grey;
+    color: white;
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    margin-left: 8px;
-    margin-right: 8px;
-  }
+    flex-direction: column;
 
-  #clock-icons:hover {
-    color: aliceblue;
-  }
-  #start {
-    font-size: 13px;
-    transform: scale(1.1);
-  }
+}
+.clock h4{
+    text-align: center;
+    margin-top: 15px;
+}
+.centertime{
+    text-align: center;
+    position: absolute;
+    top: 16%;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+.centertime h1{
+    font-size: 5rem;
+    margin-left: 17%
+}
+.centertime h5{
+    margin-left: 17%
+}
+.image{
+    position: absolute;
+    top: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
 
-  #reset {
-    transform: scale(1.1);
-  }
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
 
-  #stop {
-    transform: scale(1.1);
-  }
+}
+.far,.fas{
+    color: white;
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+#msg-text{
+  font-size: 2rem;
+  position: relative;
+  color: black;
+}
